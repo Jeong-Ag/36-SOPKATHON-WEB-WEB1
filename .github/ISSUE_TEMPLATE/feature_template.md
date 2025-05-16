@@ -1,7 +1,7 @@
 ---
 name: feature 템플릿✏️
 about: feature 템플릿✏️
-title: ''
+title: '[Feature]: '
 labels: ''
 assignees: ''
 ---

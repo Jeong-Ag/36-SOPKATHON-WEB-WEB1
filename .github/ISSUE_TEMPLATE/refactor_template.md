@@ -1,7 +1,7 @@
 ---
 name: refactor 템플릿 📃
 about: refactor 템플릿 📃
-title: ''
+title: '[Refactor]: '
 labels: ''
 assignees: ''
 ---

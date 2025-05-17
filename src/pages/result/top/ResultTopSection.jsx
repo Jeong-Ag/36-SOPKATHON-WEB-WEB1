@@ -7,7 +7,7 @@ import {
   SubTitle,
 } from './ResultTopSection.style';
 
-const ResultTopSection = ({ restName, resetImageUrl, resetIntroduction, onClick }) => {
+const ResultTopSection = ({ restName, restImageUrl, resetIntroduction, onClick }) => {
   return (
     <Container>
       <HeaderContainer>
@@ -15,7 +15,7 @@ const ResultTopSection = ({ restName, resetImageUrl, resetIntroduction, onClick 
       </HeaderContainer>
       <MainContainer>
         <ImageContainer>
-          <img src={resetImageUrl} alt="main_image"></img>
+          <img src={restImageUrl} alt="main_image"></img>
         </ImageContainer>
         <Title>{restName}</Title>
         <SubTitle>{resetIntroduction}</SubTitle>

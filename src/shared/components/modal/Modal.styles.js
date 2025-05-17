@@ -50,6 +50,7 @@ export const ModalImage = styled.img`
   border-radius: 1rem;
   width: 237px;
   height: 214px;
+  object-fit: cover;
 `;
 
 export const InfoWrapper = styled.div`
@@ -119,4 +120,5 @@ export const Description = styled.div`
   border-radius: 1rem;
   background-color: ${({ theme }) => theme.colors.gray1};
   ${({ theme }) => theme.typography.textStyles.c7_r_12};
+  width: 204px;
 `;

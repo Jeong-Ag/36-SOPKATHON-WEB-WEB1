@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { getTextStyle } from '../styles/typography';
+import { getTextStyle } from '../../shared/styles/typography';
 
 const home = () => {
   return <Wrapper>home</Wrapper>;

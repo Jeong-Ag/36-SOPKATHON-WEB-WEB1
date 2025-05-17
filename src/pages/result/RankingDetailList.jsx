@@ -2,7 +2,7 @@ import { Container } from './RankingDetailList.styles';
 import pick from '@/mocks/pick.json';
 import CardRanking from '@/shared/components/Ranking/CardRanking';
 
-const RankingDetailList = () => {
+const RankingDetailList = ({ handleModalOpen }) => {
   return (
     <Container>
       {pick.restaurants.map(({ restName, restImageUrl, restIntroduction }) => (
@@ -11,6 +11,7 @@ const RankingDetailList = () => {
           title={restName}
           description={restIntroduction}
           img={restImageUrl}
+          onClick={handleModalOpen}
         />
       ))}
     </Container>

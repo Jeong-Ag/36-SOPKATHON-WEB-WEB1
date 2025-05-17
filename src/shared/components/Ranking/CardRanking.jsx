@@ -12,9 +12,9 @@ import {
   ArrowContainer,
 } from './CardRanking.styles';
 
-const CardRanking = ({ rank, isArrow, title, description }) => {
+const CardRanking = ({ rank, isArrow, title, description, onClick }) => {
   return (
-    <Wrapper>
+    <Wrapper onClick={onClick}>
       {rank && <Rank>{rank}</Rank>}
       <Container>
         <ImageContainer>

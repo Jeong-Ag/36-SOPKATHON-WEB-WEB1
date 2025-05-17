@@ -20,7 +20,7 @@ const ResultPage = () => {
         hiasdfadsfdsafdas
       </button>
       {isModalOpen && <Modal {...storedIdData} handleModalClose={handleModalClose} />}
-      <FoodSection />
+      <FoodSection handleModalOpen={handleModalOpen} />
     </>
   );
 };

@@ -1,43 +1,37 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CardSelect from './CardSelect';
-import { ButtonContainer } from './CardSelectGroup.styles';
+import { CardContainer } from './CardSelectGroup.styles';
 
-const CardSelectGroup = () => {
+const CardSelectGroup = ({ questionA, questionB, isCardSelected, setIsCardSelected }) => {
   const [activeButton, setActiveButton] = useState(null);
-  const [hasClicked, setHasClicked] = useState(false);
+
+  useEffect(() => {
+    setActiveButton(null);
+    setIsCardSelected(false);
+  }, [questionA, questionB, setIsCardSelected]);
 
   const handleClick = (index) => {
     setActiveButton(index);
-    setHasClicked(true);
+    setIsCardSelected(true);
   };
+
   return (
-    <ButtonContainer>
+    <CardContainer>
       <CardSelect
         isActive={activeButton === 1}
-        hasClicked={hasClicked}
+        hasClicked={isCardSelected}
         onClick={() => handleClick(1)}
-        text={
-          <>
-            저는 편하게
-            <br />
-            쉬고 싶어요
-          </>
-        }
+        text={questionA}
+        alphabet="A"
       />
       <CardSelect
         isActive={activeButton === 2}
-        hasClicked={hasClicked}
+        hasClicked={isCardSelected}
         onClick={() => handleClick(2)}
-        text={
-          <>
-            저는 편하게
-            <br />
-            쉬고 싶어요
-          </>
-        }
+        text={questionB}
+        alphabet="B"
       />
-    </ButtonContainer>
+    </CardContainer>
   );
 };
 

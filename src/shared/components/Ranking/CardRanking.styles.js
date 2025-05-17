@@ -44,10 +44,12 @@ export const Description = styled.div`
 export const Rank = styled.div`
   width: 2rem;
   height: 2rem;
-  background-color: ${({ theme }) => theme.colors.gray4};
+  background-color: ${({ theme }) => theme.colors.potato_orange};
   ${({ theme }) => theme.typography.textStyles.c3_sb_14};
   text-align: center;
+  line-height: 2rem;
   border-radius: 100%;
+  color: ${({ theme }) => theme.colors.potato_yellow};
 `;
 
 export const ArrowContainer = styled.div`

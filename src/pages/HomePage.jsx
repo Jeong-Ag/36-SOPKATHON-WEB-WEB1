@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from '@emotion/styled';
-import ChipRanking from '@/shared/components/Ranking/ChipRanking.jsx';
-import CardRanking from '@/shared/components/Ranking/CardRanking.jsx';
+import OnboardingSection from './home/onboarding/OnboardingSection';
+import RankingSection from './home/ranking/RankingSection';
 
 const HomePage = () => {
+  const rankingRef = useRef(null);
   return (
     <Wrapper>
       <div>
-        <ChipRanking />
-        <CardRanking number={1} title="놀거리 이름" description="한줄 설명" />
+        <OnboardingSection
+          onScrollToRanking={() => rankingRef.current?.scrollIntoView({ behavior: 'smooth' })}
+        />
+        <RankingSection ref={rankingRef} />
       </div>
     </Wrapper>
   );

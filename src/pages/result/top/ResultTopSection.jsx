@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Container,
   HeaderContainer,
@@ -8,9 +7,7 @@ import {
   SubTitle,
 } from './ResultTopSection.style';
 
-
-const ResultTopSection = ({ onClick }) => {
-
+const ResultTopSection = ({ restName, resetImageUrl, resetIntroduction, onClick }) => {
   return (
     <Container>
       <HeaderContainer>
@@ -18,14 +15,11 @@ const ResultTopSection = ({ onClick }) => {
       </HeaderContainer>
       <MainContainer>
         <ImageContainer>
-          <img src="/example.png" alt="main_image"></img>
+          <img src={resetImageUrl} alt="main_image"></img>
         </ImageContainer>
-        <Title>안목해변</Title>
-        <SubTitle>안목해변에서 편안하게 쉬어보세요!</SubTitle>
-
-
-        <p onClick={onClick}>더 궁금해요</p>
-
+        <Title>{restName}</Title>
+        <SubTitle>{resetIntroduction}</SubTitle>
+        <p onClick={onClick}>더 궁금해요 &gt;</p>
       </MainContainer>
     </Container>
   );

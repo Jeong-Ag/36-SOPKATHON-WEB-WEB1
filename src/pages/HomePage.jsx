@@ -8,5 +8,6 @@ const HomePage = () => {
 export default HomePage;
 
 const Wrapper = styled.div`
-  ${({ theme }) => theme.typography.textStyles.h1_sb_24}
+  ${({ theme }) => theme.typography.textStyles.h4_sb_17}
+  background-color: ${({ theme }) => theme.colors.gray1};
 `;

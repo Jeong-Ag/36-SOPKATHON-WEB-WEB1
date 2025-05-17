@@ -6,17 +6,13 @@ import RankingSection from './home/ranking/RankingSection';
 const HomePage = () => {
   const rankingRef = useRef(null);
   return (
-    <Wrapper>
-      <div>
-        <OnboardingSection
-          onScrollToRanking={() => rankingRef.current?.scrollIntoView({ behavior: 'smooth' })}
-        />
-        <RankingSection ref={rankingRef} />
-      </div>
-    </Wrapper>
+    <>
+      <OnboardingSection
+        onScrollToRanking={() => rankingRef.current?.scrollIntoView({ behavior: 'smooth' })}
+      />
+      <RankingSection ref={rankingRef} />
+    </>
   );
 };
 
 export default HomePage;
-
-const Wrapper = styled.div``;

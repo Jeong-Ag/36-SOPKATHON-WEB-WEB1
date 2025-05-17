@@ -1,5 +1,5 @@
-import { css } from "@emotion/react";
-import { reset } from "./reset.css";
+import { css } from '@emotion/react';
+import { reset } from './shared/styles/reset';
 
 const GlobalStyle = css`
   ${reset}

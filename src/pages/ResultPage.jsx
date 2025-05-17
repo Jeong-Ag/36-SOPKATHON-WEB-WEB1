@@ -16,7 +16,7 @@ const ResultPage = () => {
 
   return (
     <>
-      <ResultTopSection />
+      <ResultTopSection onClick={handleModalOpen} />
       <button type="button" onClick={handleModalOpen}>
         hiasdfadsfdsafdas
       </button>

@@ -18,6 +18,7 @@ export const buttonVariantStyles = {
     background: ${theme.colors.potato_orange};
     color: ${theme.colors.white};
     width: 335px;
+    cursor: pointer;
   `,
 
   short: css`

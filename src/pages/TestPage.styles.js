@@ -15,3 +15,9 @@ export const ButtonContainer = styled.div`
   gap: 155px;
   margin-top: auto;
 `;
+
+export const Title = styled.h1`
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+`;

@@ -15,6 +15,7 @@ export const buttonVariantStyles = {
     ${theme.typography.textStyles.h4_sb_17};
     text-align: center;
     width: 335px;
+    cursor: pointer;
   `,
 
   shortActive: css`

@@ -3,20 +3,24 @@ import { ButtonContainer, Container, MainImage } from './OnboardingSection.style
 import { useNavigate } from 'react-router-dom';
 import { PATH } from '@/constants/path.js';
 
-const OnboardingSection = () => {
+const OnboardingSection = ({ onScrollToRanking }) => {
   const navigate = useNavigate();
   return (
     <Container>
       <MainImage src="/main_image.png" alt="메인 이미지" />
       <ButtonContainer>
         <Button
-          text="테스트 하러 가기"
+          text="나한테 딱 맞는 장소 찾기"
           variant="long"
           onClick={() => {
             navigate(PATH.TEST);
           }}
         />
-        <Button text="TOP 10 랭킹 보러가기" variant="long" />
+        <Button
+          text="다시 가고 싶어 X에게 물어본 그곳은?"
+          variant="long"
+          onClick={onScrollToRanking}
+        />
       </ButtonContainer>
     </Container>
   );

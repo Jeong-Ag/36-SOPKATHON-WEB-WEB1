@@ -203,6 +203,7 @@ const theme = {
     black: '#000000',
     potato_orange: '#EF684A',
     potato_yellow: '#FBFFAC',
+    black_white_black: '#2C241E',
   },
   typography: {
     textStyles: typo,

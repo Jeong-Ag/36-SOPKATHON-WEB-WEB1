@@ -37,4 +37,7 @@ export const Text = styled.div`
   ${({ theme }) => theme.typography.textStyles.h5_sb_16};
   color: ${({ isActive, hasClicked, theme }) =>
     !isActive && hasClicked ? theme.colors.gray3 : theme.colors.black};
+  padding: 24px;
+  text-align: center;
+  white-space: pre-wrap;
 `;

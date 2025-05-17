@@ -197,7 +197,7 @@ const theme = {
     gray7: '#979EA6',
     gray8: '#868D95',
     gray9: '#787F87',
-    gray10: '#111111',
+    gray10: '#6A7079',
     gray11: '#111111',
     white: '#ffffff',
     black: '#000000',

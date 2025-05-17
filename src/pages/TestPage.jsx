@@ -1,6 +1,11 @@
-import TestButtonWrapper from '@/shared/components/Test/CardSelectBox';
+import CardSelectGroup from '../shared/components/Test/CardSelectGroup';
+
 const TestPage = () => {
-  return <TestButtonWrapper />;
+  return (
+    <div>
+      <CardSelectGroup />
+    </div>
+  );
 };
 
 export default TestPage;

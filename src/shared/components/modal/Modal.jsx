@@ -1,3 +1,5 @@
+import http from '@/shared/apis/http';
+import { useEffect, useState } from 'react';
 import {
   Overlay,
   Container,
@@ -20,16 +22,33 @@ import {
   CloseButton,
 } from './Modal.styles';
 
-const Modal = ({
-  name,
-  imageUrl,
-  address,
-  phone,
-  time,
-  category,
-  description,
-  handleModalClose,
-}) => {
+const activityId = 1;
+const restaurantId = 9;
+
+const Modal = ({ handleModalClose, type }) => {
+  const [modalData, setModalData] = useState(null);
+
+  const getData = async () => {
+    try {
+      const response = await http.get(
+        type === 'activity'
+          ? `/api/pick/activity/${activityId}`
+          : `/api/pick/restaurant/${restaurantId}`
+      );
+      setModalData(response.data.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, [type]);
+
+  if (!modalData) return null;
+
+  const { name, imageUrl, address, phone, time, category, description } = modalData;
+
   return (
     <Overlay>
       <Container>
@@ -43,22 +62,22 @@ const Modal = ({
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
                   {' '}
                   <rect width="24" height="24" fill="white"></rect>{' '}
                   <path
                     d="M7 17L16.8995 7.10051"
                     stroke="#868D95"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{' '}
                   <path
                     d="M7 7.00001L16.8995 16.8995"
                     stroke="#868D95"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>{' '}
                 </g>
               </svg>

@@ -6,6 +6,7 @@ export const Container = styled.div`
   background: linear-gradient(180deg, rgba(251, 255, 172, 0.87) 0%, #ffffff 84.62%);
   display: flex;
   position: relative;
+  justify-content: center;
 `;
 
 export const MainImage = styled.img`
@@ -16,4 +17,13 @@ export const MainImage = styled.img`
   width: 336px;
   height: 439px;
   object-fit: contain;
+`;
+
+export const ButtonContainer = styled.div`
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 335px;
 `;

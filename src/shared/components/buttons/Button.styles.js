@@ -4,7 +4,7 @@ import theme from '@/shared/styles/theme';
 export const buttonVariantStyles = {
   long: css`
     display: flex;
-    padding: 12px 96px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;

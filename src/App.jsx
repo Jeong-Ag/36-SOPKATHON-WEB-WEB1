@@ -6,7 +6,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Global styles={GlobalStyle} />
-      <h1>123123s</h1>
+      {/* 여기 작성 */}
+      {/* <div>hi</div> */}
     </ThemeProvider>
   );
 }

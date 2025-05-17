@@ -1,7 +1,7 @@
 import Modal from '@/shared/components/modal/Modal';
 import { storedIdData } from '@/shared/components/modal/constants/storedIdData';
 import { useState } from 'react';
-import FoodSection from './result/foodSection';
+import ResultTopSection from './result/top/resultTopSection';
 
 const ResultPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,9 +16,7 @@ const ResultPage = () => {
 
   return (
     <>
-      <button type="button" onClick={handleModalOpen}>
-        hiasdfadsfdsafdas
-      </button>
+      <ResultTopSection onClick={handleModalOpen} />
       {isModalOpen && <Modal {...storedIdData} handleModalClose={handleModalClose} />}
       <FoodSection handleModalOpen={handleModalOpen} />
     </>

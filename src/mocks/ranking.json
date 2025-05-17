@@ -4,61 +4,61 @@
       "rank": 1,
       "title": "놀이공원",
       "description": "짜릿한 하루를 보내요",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 2,
       "title": "보드게임카페",
       "description": "친구들과 머리 싸움!",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 3,
       "title": "방탈출",
       "description": "몰입감 넘치는 체험",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 4,
       "title": "디저트 카페",
       "description": "달콤한 케이크와 음료",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 5,
       "title": "분식집",
       "description": "떡볶이와 튀김의 조합",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 6,
       "title": "삼겹살집",
       "description": "구워 먹는 즐거움",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 7,
       "title": "버거 전문점",
       "description": "수제 버거 한 입",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 8,
       "title": "초밥집",
       "description": "신선한 회의 맛",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 9,
       "title": "치킨집",
       "description": "바삭하고 짭짤한 맛",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 10,
       "title": "국밥집",
       "description": "든든한 한 끼 식사",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     }
   ],
   "activity": [
@@ -66,61 +66,61 @@
       "rank": 1,
       "title": "노래방",
       "description": "소리 질러!",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 2,
       "title": "영화관",
       "description": "최신 영화 한 편",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 3,
       "title": "실내 클라이밍",
       "description": "몸으로 즐기는 도전",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 4,
       "title": "스포츠 경기 관람",
       "description": "응원과 함성의 현장",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 5,
       "title": "VR 체험존",
       "description": "가상현실 속 모험",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 6,
       "title": "수영장",
       "description": "시원한 물놀이",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 7,
       "title": "피크닉",
       "description": "자연 속에서 힐링",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 8,
       "title": "자전거 타기",
       "description": "바람을 가르며 질주",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 9,
       "title": "플리마켓 방문",
       "description": "숨은 보물 찾기",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     },
     {
       "rank": 10,
       "title": "야경 보기",
       "description": "밤의 낭만을 느껴요",
-      "img": "/rankingDetail.png"
+      "img": "/ranking_detail.png"
     }
   ]
 }

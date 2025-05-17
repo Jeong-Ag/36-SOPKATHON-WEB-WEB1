@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 export const ChipWrapper = styled.div`
   display: flex;
   gap: 0.8rem;
+  padding-left: 1.6rem;
 `;
 
 export const Button = styled.button`
@@ -13,4 +14,5 @@ export const Button = styled.button`
   background-color: ${({ isActive, theme }) =>
     isActive ? theme.colors.potato_orange : theme.colors.gray2};
   color: ${({ isActive, theme }) => (isActive ? theme.colors.white : theme.colors.gray8)};
+  cursor: pointer;
 `;

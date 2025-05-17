@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from '@emotion/styled';
+import { getTextStyle } from '../styles/typography';
 
 const home = () => {
   return <Wrapper>home</Wrapper>;
@@ -7,6 +9,6 @@ const home = () => {
 export default home;
 
 const Wrapper = styled.div`
-  background-color: ${theme.colors.gray1};
-  font: ${theme.typography.textStyles.h0_sb_22};
+  ${({ theme }) => getTextStyle('h1_sb_24')({ theme })}
+  background-color: ${({ theme }) => theme.colors.gray1};
 `;

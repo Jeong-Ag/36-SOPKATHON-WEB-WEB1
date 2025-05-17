@@ -4,8 +4,8 @@ import styled from '@emotion/styled';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
-  padding: 0rem 2rem;
+  align-items: center;
+  gap: 2.8rem;
 `;
 
 export const Title = styled.div`
@@ -15,5 +15,5 @@ export const Title = styled.div`
 export const FoodList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.6rem;
 `;

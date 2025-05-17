@@ -14,7 +14,7 @@ const FoodSection = () => {
         <RankingDetailList />
       </FoodList>
       <Button
-        text="테스트 하러 가기"
+        text="테스트 다시 하기"
         variant="long"
         onClick={() => {
           navigate(PATH.TEST);

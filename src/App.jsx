@@ -1,13 +1,14 @@
-import { Global, ThemeProvider } from '@emotion/react';
+import { RouterProvider } from 'react-router-dom';
 import theme from './shared/styles/theme';
-import GlobalStyle from './global.js';
+import GlobalStyle from './global';
+import { Global, ThemeProvider } from '@emotion/react';
+import Routes from './routes/Routes';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Global styles={GlobalStyle} />
-      {/* 여기 작성 */}
-      {/* <div>hi</div> */}
+      <RouterProvider router={Routes} />
     </ThemeProvider>
   );
 }

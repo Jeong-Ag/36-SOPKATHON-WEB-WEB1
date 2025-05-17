@@ -4,16 +4,17 @@ import theme from '@/shared/styles/theme';
 export const buttonVariantStyles = {
   long: css`
     display: flex;
-    width: 20.9375rem;
-    padding: 0.75rem 6rem;
+    padding: 12px 96px;
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
     border-radius: 0.625rem;
+    border: none;
     background: ${theme.colors.potato_orange};
     color: ${theme.colors.white};
     ${theme.typography.textStyles.h4_sb_17};
     text-align: center;
+    width: 335px;
   `,
 
   shortActive: css`
@@ -44,4 +45,3 @@ export const buttonVariantStyles = {
     text-align: center;
   `,
 };
-

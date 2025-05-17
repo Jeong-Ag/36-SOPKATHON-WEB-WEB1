@@ -10,9 +10,9 @@ import {
   Description,
   Rank,
   ArrowContainer,
-} from './CardRanking';
+} from './CardRanking.styles';
 
-const CardRanking = ({ rank, isArrow }) => {
+const CardRanking = ({ rank, isArrow, title, description }) => {
   return (
     <Wrapper>
       {rank && <Rank>{rank}</Rank>}
@@ -21,8 +21,8 @@ const CardRanking = ({ rank, isArrow }) => {
           <img src={rankingDetailImage} alt="rankingDetail" />
         </ImageContainer>
         <TextContainer>
-          <Title>놀거리 이름</Title>
-          <Description>한줄 설명</Description>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
         </TextContainer>
         {isArrow && (
           <ArrowContainer>

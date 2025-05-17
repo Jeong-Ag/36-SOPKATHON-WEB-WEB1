@@ -1,4 +1,4 @@
-import TestButtonWrapper from '@/shared/components/CardSelectBox';
+import TestButtonWrapper from '@/shared/components/Test/CardSelectBox';
 const TestPage = () => {
   return <TestButtonWrapper />;
 };

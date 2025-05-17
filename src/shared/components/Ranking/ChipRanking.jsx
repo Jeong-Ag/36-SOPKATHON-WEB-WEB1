@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { ChipWrapper, Button } from './ChipRanking';
+import { ChipWrapper, Button } from './ChipRanking.styles';
 
 const ChipRanking = () => {
   const [activeTab, setActiveTab] = useState('food');

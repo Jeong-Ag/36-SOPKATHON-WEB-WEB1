@@ -8,7 +8,7 @@ const HomePage = () => {
     <Wrapper>
       <div>
         <ChipRanking />
-        <CardRanking number={1} />
+        <CardRanking number={1} title="놀거리 이름" description="한줄 설명" />
       </div>
     </Wrapper>
   );

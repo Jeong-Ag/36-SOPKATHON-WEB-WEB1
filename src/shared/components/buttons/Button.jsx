@@ -1,13 +1,12 @@
 /** @jsxImportSource @emotion/react */
-import { buttonVariantStyles } from './buttonStyle';
+import { buttonVariantStyles } from './Button.styles.js';
 
-const Button = ({ children, variant = 'long', ...props }) => {
+const Button = ({ text, variant = 'long', ...props }) => {
   return (
     <button css={buttonVariantStyles[variant]} {...props}>
-      {children}
+      {text}
     </button>
   );
 };
 
 export default Button;
-

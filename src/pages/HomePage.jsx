@@ -1,13 +1,7 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import OnboardingSection from './home/onboarding/OnboardingSection';
 
 const HomePage = () => {
-  return <Wrapper>home</Wrapper>;
+  return <OnboardingSection />;
 };
 
 export default HomePage;
-
-const Wrapper = styled.div`
-  ${({ theme }) => theme.typography.textStyles.h4_sb_17}
-  background-color: ${({ theme }) => theme.colors.gray1};
-`;

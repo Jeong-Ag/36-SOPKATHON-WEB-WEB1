@@ -5,5 +5,15 @@ export const Container = styled.div`
   height: 667px;
   background: linear-gradient(180deg, rgba(251, 255, 172, 0.87) 0%, #ffffff 84.62%);
   display: flex;
-  padding: 1rem;
+  position: relative;
+`;
+
+export const MainImage = styled.img`
+  position: absolute;
+  top: 51px;
+  left: 18px;
+  right: 21px;
+  width: 336px;
+  height: 439px;
+  object-fit: contain;
 `;

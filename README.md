@@ -112,3 +112,5 @@
 <h2>스웹팟 Before and After</h2>
 <h3>Before</h3>
 <img src="public/before.jpeg" alt="웨비 팀원들 사진 (before)"/>
+<h3>After</h3>
+<img src="public/after.jpeg" alt="웨비 팀원들 사진 (after)"/>

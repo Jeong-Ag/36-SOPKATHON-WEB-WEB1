@@ -1,4 +1,177 @@
-export const theme = {
+import { css } from '@emotion/react';
+
+const typo = {
+  h0_sb_22: css`
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 138%;
+    letter-spacing: 1%;
+  `,
+  h1_sb_24: css`
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  h2_sb_20: css`
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  h3_sb_18: css`
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  h4_sb_17: css`
+    font-size: 1.0625rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  h5_sb_16: css`
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  h6_r_20: css`
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b0_r_22: css`
+    font-size: 1.375rem;
+    font-weight: 400;
+    line-height: 138%;
+    letter-spacing: 1%;
+  `,
+  b1_m_20: css`
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b2_m_18: css`
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b3_r_18: css`
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b4_m_17: css`
+    font-size: 1.0625rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b5_r_17: css`
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b6_m_16: css`
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b7_r_16: css`
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b8_m_15: css`
+    font-size: 0.9375rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  b9_r_15: css`
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  c1_sb_15: css`
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 1%;
+  `,
+  c2_r_14: css`
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  c3_sb_14: css`
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  c4_m_14: css`
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  c5_m_13: css`
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  c6_r_13: css`
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  c7_r_12: css`
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  f1_sb_11: css`
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  f2_sb_10: css`
+    font-size: 0.625rem;
+    font-weight: 600;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  f3_r_10: css`
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 2%;
+  `,
+  i1_r_15: css`
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 1%;
+  `,
+};
+
+const theme = {
   colors: {
     gray1: '#F6F6F6',
     gray2: '#EBEDEF',
@@ -15,175 +188,8 @@ export const theme = {
     black: '#000000',
   },
   typography: {
-    textStyles: {
-      h0_sb_22: {
-        fontSize: '1.375rem',
-        fontWeight: 600,
-        lineHeight: '138%',
-        letterSpacing: '1%',
-      },
-      h1_sb_24: {
-        fontSize: '1.5rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      h2_sb_20: {
-        fontSize: '1.25rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      h3_sb_18: {
-        fontSize: '1.125rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      h4_sb_17: {
-        fontSize: '1.0625rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      h5_sb_16: {
-        fontSize: '1rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      h6_r_20: {
-        fontSize: '1.25rem',
-        fontWeight: 400,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b0_r_22: {
-        fontSize: '1.375rem',
-        fontWeight: 400,
-        lineHeight: '138%',
-        letterSpacing: '1%',
-      },
-      b1_m_20: {
-        fontSize: '1.25rem',
-        fontWeight: 500,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b2_m_18: {
-        fontSize: '1.125rem',
-        fontWeight: 500,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b3_r_18: {
-        fontSize: '1.125rem',
-        fontWeight: 400,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b4_m_17: {
-        fontSize: '1.0625rem',
-        fontWeight: 500,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b5_r_17: {
-        fontSize: '1.0625rem',
-        fontWeight: 400,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b6_m_16: {
-        fontSize: '1rem',
-        fontWeight: 500,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b7_r_16: {
-        fontSize: '1rem',
-        fontWeight: 400,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b8_m_15: {
-        fontSize: '0.9375rem',
-        fontWeight: 500,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      b9_r_15: {
-        fontSize: '0.9375rem',
-        fontWeight: 400,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      c1_sb_15: {
-        fontSize: '0.9375rem',
-        fontWeight: 600,
-        lineHeight: '140%',
-        letterSpacing: '1%',
-      },
-      c2_r_14: {
-        fontSize: '0.875rem',
-        fontWeight: 400,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      c3_sb_14: {
-        fontSize: '0.875rem',
-        fontWeight: 600,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      c4_m_14: {
-        fontSize: '0.875rem',
-        fontWeight: 500,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      c5_m_13: {
-        fontSize: '0.8125rem',
-        fontWeight: 500,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      c6_r_13: {
-        fontSize: '0.8125rem',
-        fontWeight: 400,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      c7_r_12: {
-        fontSize: '0.75rem',
-        fontWeight: 400,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      f1_sb_11: {
-        fontSize: '0.6875rem',
-        fontWeight: 600,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      f2_sb_10: {
-        fontSize: '0.625rem',
-        fontWeight: 600,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      f3_r_10: {
-        fontSize: '0.625rem',
-        fontWeight: 400,
-        lineHeight: '128%',
-        letterSpacing: '2%',
-      },
-      i1_r_15: {
-        fontSize: '0.9375rem',
-        fontWeight: 400,
-        lineHeight: '170%',
-        letterSpacing: '1%',
-      },
-    },
+    textStyles: typo,
   },
 };
+
+export default theme;

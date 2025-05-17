@@ -2,8 +2,8 @@ import axios from 'axios';
 
 // axios 인스턴스
 const api = axios.create({
-  baseURL: process.env.REACT_APP_BASE_URL,
-  timeout: 10000, //기본 10초로 설정하긴 했는데.. 추후 수정하거나 없애도 됨. 더 긴 건 각 요청에서 개별 설정하기
+  baseURL: import.meta.env.VITE_APP_BASE_URL,
+  timeout: 5000,
   headers: {
     'Content-Type': 'application/json',
   },

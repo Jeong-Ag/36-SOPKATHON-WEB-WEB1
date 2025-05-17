@@ -16,7 +16,14 @@ const ResultPage = () => {
 
   return (
     <>
+
+      <ResultTopSection />
+      <button type="button" onClick={handleModalOpen}>
+        hiasdfadsfdsafdas
+      </button>
+
       <ResultTopSection onClick={handleModalOpen} />
+
       {isModalOpen && <Modal {...storedIdData} handleModalClose={handleModalClose} />}
       <FoodSection handleModalOpen={handleModalOpen} />
     </>

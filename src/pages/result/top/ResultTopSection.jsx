@@ -8,7 +8,9 @@ import {
   SubTitle,
 } from './ResultTopSection.style';
 
+
 const ResultTopSection = ({ onClick }) => {
+
   return (
     <Container>
       <HeaderContainer>
@@ -20,7 +22,10 @@ const ResultTopSection = ({ onClick }) => {
         </ImageContainer>
         <Title>안목해변</Title>
         <SubTitle>안목해변에서 편안하게 쉬어보세요!</SubTitle>
+
+
         <p onClick={onClick}>더 궁금해요</p>
+
       </MainContainer>
     </Container>
   );

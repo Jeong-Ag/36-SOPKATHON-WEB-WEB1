@@ -1,6 +1,11 @@
+import CardSelectGroup from '../shared/components/Test/CardSelectGroup';
+
 const TestPage = () => {
-    return <h1>Test Page</h1>
-  }
-  
-export default TestPage
-  
+  return (
+    <div>
+      <CardSelectGroup />
+    </div>
+  );
+};
+
+export default TestPage;

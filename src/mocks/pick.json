@@ -1,0 +1,16 @@
+{
+  "restaurants": [
+    {
+      "restName": "감자밭식당",
+      "restImageUrl": "https://placehold.co/92x72",
+      "restIntroduction": "최고의 식당 ㅋㅋ"
+    }
+  ],
+  "activities": [
+    {
+      "actName": "곤지암 스키장",
+      "actImageUrl": "https://placehold.co/92x72",
+      "actIntrodcution": "최고의 스키장 ㅋㅋ"
+    }
+  ]
+}

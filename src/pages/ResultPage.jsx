@@ -1,6 +1,6 @@
 import Modal from '@/shared/components/modal/Modal';
 import { useEffect, useState } from 'react';
-import ResultTopSection from './result/top/resultTopSection';
+import ResultTopSection from './result/top/ResultTopSection';
 import FoodSection from './result/FoodSection';
 import { Container } from './ResultPage.styles';
 import http from '../shared/apis/http';
